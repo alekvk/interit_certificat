@@ -1,13 +1,12 @@
 package Lesson_7.Model;
 
 import java.util.List;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Date;
 
 
 import Lesson_7.Model.Base.Buyer;
 import Lesson_7.Model.Base.Toy;
+import Lesson_7.Model.File.WriterFile;
 
 public class PrizeDrawing {
     private List<Buyer> buyers;
@@ -55,9 +54,8 @@ public class PrizeDrawing {
 
             // Сохраняем победителя  розыгрыша и приз в файле log_prizes.txt
             StringBuilder s = BuildString(i, winBuyer, WinToy);
-            writeFile(s, "log_prizes.txt"); 
-           
-
+            WriterFile.fileWrite(s, "log_prizes.txt", true);
+          
             // Удаляем выигрышный чек из файла buyers.txt
             b.removeBuyer(winBuyer.getIdBuyer());
             
@@ -151,6 +149,7 @@ public class PrizeDrawing {
 
     } 
 
+    /*
     static void writeFile(StringBuilder sb, String fileName) {
         try(FileWriter writer = new FileWriter(fileName, true)) {
             
@@ -161,6 +160,7 @@ public class PrizeDrawing {
             System.out.println(ex.getMessage());
         }
     }
+    */
 
 
 

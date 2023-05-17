@@ -1,0 +1,20 @@
+
+Drawing of toys   Mon May 15 15:43:36 MSK 2023
+stage 1  winner check: 5,985214,04-01-2023,1200  prize: Kukla Masha
+stage 2  winner check: 3,236896,23-03-2023,980  prize: Funbol
+stage 3  winner check: 1,256323,02-03-2023,560  prize: Kukla Masha
+
+Drawing of toys   Mon May 15 15:44:43 MSK 2023
+stage 1  winner check: 4,555555,02-03-2023,450  prize: Avtoralli
+stage 2  winner check: 6,321321,15-12-2022,405  prize: Lego988
+stage 3  winner check: 9,116666,15-12-2022,750  prize: Plan Ty-204
+
+Drawing of toys   Wed May 17 06:56:13 MSK 2023
+stage 1  winner check: 1,256323,02-03-2023,560  prize: Kukla Masha
+stage 2  winner check: 7,666666,15-12-2022,300  prize: Funbol
+stage 3  winner check: 6,321321,15-12-2022,405  prize: Kukla Masha
+
+Drawing of toys   Wed May 17 06:56:22 MSK 2023
+stage 1  winner check: 2,256321,22-01-2023,890  prize: Avtoralli
+stage 2  winner check: 5,985214,04-01-2023,1200  prize: Lego988
+stage 3  winner check: 3,236896,23-03-2023,980  prize: Plan Ty-204

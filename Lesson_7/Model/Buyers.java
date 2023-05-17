@@ -30,7 +30,8 @@ public class Buyers {
         buyers.add(buyer);
         System.out.println("Покупатель успешно добавлен");
         StringBuilder sb = BuildString(buyers);
-        WriterFile.writeFile(sb, "buyers.txt");
+        //WriterFile.writeFile(sb, "buyers.txt");
+        WriterFile.fileWrite(sb, "buyers.txt", false);
     }
 
     
@@ -39,7 +40,8 @@ public class Buyers {
             if (buyers.get(i).getIdBuyer().equals(idBuyer)) {
                 buyers.remove(i);
                 StringBuilder sb = BuildString(buyers);
-                WriterFile.writeFile(sb, "buyers.txt");  
+                //WriterFile.writeFile(sb, "buyers.txt"); 
+                WriterFile.fileWrite(sb, "buyers.txt", false);
                 return;
             }
         }
@@ -55,7 +57,8 @@ public class Buyers {
                 b.setDatePurchase(datePurchase);
                 b.setPurchaseAmount(purchaseAmount);
                 StringBuilder sb = BuildString(buyers);
-                WriterFile.writeFile(sb, "buyers.txt"); 
+                //WriterFile.writeFile(sb, "buyers.txt"); 
+                WriterFile.fileWrite(sb, "buyers.txt", false);
                 return;
             }
         }
@@ -85,13 +88,15 @@ public class Buyers {
         List<Buyer> buyers2 = SplitString(scan);
         buyers.addAll(buyers2);
         StringBuilder sb = BuildString(buyers);
-        WriterFile.writeFile(sb, "buyers.txt"); 
+        //WriterFile.writeFile(sb, "buyers.txt"); 
+        WriterFile.fileWrite(sb, "buyers.txt", false);
         System.out.println("В сведения о покупателях добавлены добавлены сведения из файла " + fileName);
     }
 
     public void exportToFile(String fileName) {
         StringBuilder sb = BuildString(buyers);
-        WriterFile.writeFile(sb, fileName); 
+        //WriterFile.writeFile(sb, fileName); 
+        WriterFile.fileWrite(sb, "buyers.txt", false);
         System.out.println("Сведения о покупателях экспортированы в файл " + fileName);
     }
 
